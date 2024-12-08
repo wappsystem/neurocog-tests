@@ -1,0 +1,276 @@
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css" />
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.2.1.min.js"></script>
+        <script>$vm={};$VmAPI={};$vm.ver=[0.53,0.53];$vm.reload='';</script>
+        <script src="https://vm.vmiis.com/distribution/vm.js"></script>
+    </head>
+    <body>
+        <div style="padding:6px">
+            <button type=button id=start__ID class='btn btn-secondary'>Start</button> <button id=pause__ID class='btn btn-secondary'>Pause</button> <button type=button id=stop__ID class='btn btn-secondary'>Stop</button>
+        </div>
+        <div>
+            <div style='margin-left:auto;margin-right:auto;width:960px;height:720px;' >
+                <img id=img__ID >
+            <div>
+        </div>
+    </body>
+    <script>
+            document.title="Word Pairs";
+
+            var pause_array=[
+                {src:'__CURRENT_PATH__/../images/set2.2/Blanc_1.jpg',time:1000},
+            ]
+
+            var img_array=[
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide34_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide35_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide36_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide37_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide38_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide39_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide40_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide41_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide42_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide43_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide44_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide45_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide46_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide47_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide48_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide49_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide50_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide51_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide52_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide53_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide54_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide55_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide56_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide57_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide58_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide59_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide60_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide61_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide62_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide63_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide64_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide65_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Blanc_1.jpg',time:3000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide34_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide35_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide36_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide37_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide38_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide39_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide40_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide41_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide42_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide43_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide44_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide45_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide46_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide47_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide48_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide49_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide50_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide51_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide52_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide53_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide54_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide55_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide56_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide57_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide58_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide59_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide60_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide61_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide62_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide63_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide64_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide65_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide66_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide67_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide68_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide69_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide70_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide71_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide72_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide73_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide74_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide75_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide76_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide77_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide78_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide79_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide80_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide81_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide82_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide83_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide84_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide85_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide86_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide87_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide88_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide89_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide90_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide91_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide92_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide93_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide94_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide95_2.jpg',time:2000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide96_2.jpg',time:7000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recognition/Slide97_2.jpg',time:2000},
+        ]
+        //----------------------------------
+
+        //----------------------------------
+        var random_array=function(array){
+                var currentIndex=array.length, temporaryValue, randomIndex;
+                while (0 !== currentIndex) {
+                    randomIndex = Math.floor(Math.random() * currentIndex);
+                    currentIndex -= 1;
+                    temporaryValue = array[currentIndex];
+                    array[currentIndex] = array[randomIndex];
+                    array[randomIndex] = temporaryValue;
+                }
+                return array;
+        }
+        //----------------------------------
+        var group1=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+        var group1_random=random_array(group1);
+        //var group2=[34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97];
+        //var group2_random=random_array(group2);
+        //----------------------------------
+        var group4=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+        var group4_random_0=random_array(group4);
+        var group4_random=[];
+        for(var i=0;i<32;i++){
+            group4_random.push(2*group4_random_0[i])
+            group4_random.push(2*group4_random_0[i]+1)
+        }
+        //----------------------------------
+        var random_img=[]
+        for(var i=0;i<32;i++) random_img.push(group1[i])
+        random_img.push(32)
+        for(var i=0;i<64;i++) random_img.push(33+group4_random[i])
+        console.dir(random_img)
+
+        var I=-1;
+        var N=img_array.length;
+            var pause=false;
+        $('#D__ID').on('load',function(){
+            I=-1;
+        })
+        $('#start__ID').on('click',function(){
+            if(I<0){
+                I=0;
+                set_img();
+            }
+            else{
+                I=0
+            }
+        })
+        $('#pause__ID').on('click',function(){
+            if (pause==false) {
+                $("#pause__ID").html('Continue');
+                pause=true;
+            }
+            else {
+                $("#pause__ID").html('Pause');
+                pause=false;
+                }
+            })
+        $('#stop__ID').on('click',function(){
+            I=-1;
+        })
+        var set_img=function(){
+                if(pause==false){
+                    var r_I=random_img[I];
+                    console.log(I+'---'+r_I)
+                    if(I>=97){
+                        $("#img__ID").attr("src",pause_array[0].src);
+                        return;
+                    }
+                    $("#img__ID").attr("src",img_array[r_I].src);
+                    setTimeout(set_img, img_array[r_I].time);
+                    I++;
+                }
+                else{
+                    $("#img__ID").attr("src",pause_array[0].src);
+                    setTimeout(set_img, pause_array[0].time);
+                }
+            }
+
+
+
+
+        /*
+
+        var random_array=function(array){
+            var currentIndex=array.length, temporaryValue, randomIndex;
+            while (0 !== currentIndex) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            return array;
+        }
+
+        //----------------------------------
+        var group1=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32];
+        var group1_random=random_array(group1);
+        var group2=[34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65];
+        var group2_random=random_array(group2);
+        //----------------------------------
+        var I=-1;
+        var N=img_array.length;
+            var pause=false;
+        $('#D__ID').on('load',function(){
+            I=-1;
+        })
+        $('#start__ID').on('click',function(){
+            if(I<0){
+                I=0;
+                set_img();
+            }
+            else{
+                I=0
+            }
+        })
+        $('#pause__ID').on('click',function(){
+            if (pause==false) {
+                $("#pause__ID").html('Continue');
+                pause=true;
+            }
+            else {
+                $("#pause__ID").html('Pause');
+                pause=false;
+            }
+        })
+        $('#stop__ID').on('click',function(){
+            I=-1;
+        })
+        var set_img=function(){
+            if(I>=0 && I <=64){ //total 65 images
+                if(pause==false){
+                var new_I=I+1;
+                if(new_I>=1 && new_I<=32) new_I=group1_random[new_I-1];
+                else if(new_I>=34 && new_I<=65) new_I=group2_random[new_I-34];
+                $("#img__ID").attr("src",img_array[new_I-1].src);
+                setTimeout(set_img, img_array[new_I-1].time);
+                I++;
+            }
+            else{
+                $("#img__ID").attr("src",pause_array[0].src);
+                setTimeout(set_img, pause_array[0].time);
+                }
+            }
+        }
+        */
+    </script>
+</html>

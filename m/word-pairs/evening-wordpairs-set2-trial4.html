@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css" />
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.2.1.min.js"></script>
+        <script>$vm={};$VmAPI={};$vm.ver=[0.53,0.53];$vm.reload='';</script>
+        <script src="https://vm.vmiis.com/distribution/vm.js"></script>
+    </head>
+    <body>
+        <div style="padding:6px">
+            <button type=button id=start__ID class='btn btn-secondary'>Start</button> <button id=pause__ID class='btn btn-secondary'>Pause</button> <button type=button id=stop__ID class='btn btn-secondary'>Stop</button>
+        </div>
+        <div>
+            <div style='margin-left:auto;margin-right:auto;width:960px;height:720px;' >
+                <img id=img__ID >
+            <div>
+        </div>
+    </body>
+    <script>
+            document.title="Word Pairs";
+
+        //-------------------------------------
+        var pause_array=[
+        {src:'__CURRENT_PATH__/../images/set2.2/Blanc_1.jpg',time:1000},
+        ]
+        var img_array=[
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide1_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide2_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide3_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide4_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide5_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide6_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide7_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide8_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide9_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide10_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide11_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide12_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide13_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide14_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide15_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide16_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide17_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide18_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide19_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide20_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide21_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide22_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide23_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide24_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide25_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide26_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide27_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide28_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide29_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide30_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide31_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Pres/Slide32_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Blanc_1.jpg',time:5000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide34_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide35_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide36_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide37_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide38_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide39_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide40_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide41_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide42_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide43_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide44_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide45_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide46_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide47_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide48_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide49_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide50_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide51_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide52_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide53_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide54_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide55_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide56_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide57_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide58_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide59_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide60_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide61_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide62_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide63_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide64_1.jpg',time:12000},
+            {src:'__CURRENT_PATH__/../images/set2.2/Recall/Slide65_1.jpg',time:12000},
+
+        ]
+        //----------------------------------
+        var random_array=function(array){
+            var currentIndex=array.length, temporaryValue, randomIndex;
+            while (0 !== currentIndex) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            return array;
+        }
+        //----------------------------------
+        var group1=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+        var group1_random=random_array(group1);
+		var group2=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+        var group2_random=random_array(group2);
+        //----------------------------------
+		var all=[];
+		for(i=0;i<32;i++){
+			all.push(0+group1[i])
+		}
+		all.push(32)
+		for(i=0;i<32;i++){
+			all.push(33+group2[i])
+		}
+		//all.push(65)
+		console.dir(all)
+		//----------------------------------
+        var I=-1;
+        var N=img_array.length;
+            var pause=false;
+        $('#D__ID').on('load',function(){
+            I=-1;
+        })
+        $('#start__ID').on('click',function(){
+            if(I<0){
+                I=0;
+                set_img();
+            }
+            else{
+                I=0
+            }
+        })
+        $('#pause__ID').on('click',function(){
+            if (pause==false) {
+                $("#pause__ID").html('Continue');
+                pause=true;
+            }
+            else {
+                $("#pause__ID").html('Pause');
+                pause=false;
+                set_img();
+            }
+        })
+        $('#stop__ID').on('click',function(){
+            I=-1;
+        })
+        var set_img=function(){
+            if(I>=0 && I<=64){
+                if(pause==false){
+					var r_I=all[I];
+					console.log(I+'---'+r_I);
+	                $("#img__ID").attr("src",img_array[r_I].src);
+					setTimeout(set_img, img_array[r_I].time);
+	                I++;
+            	}
+                else{
+                    $("#img__ID").attr("src",pause_array[0].src);
+                }
+            }
+        }
+	
+    </script>
+</html>

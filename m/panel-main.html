@@ -49,6 +49,28 @@
         			<li title=""><a href=?/iapsr2e-form-spardac>Extended IAPS task morning recognition</a></li>
 				</ul>
         	</div>
+			<div class='nav__ID'>
+				<span>Word Pairs</span>
+				<ul>
+					<span>Evening</span>
+					<ul>
+						<li><a class="small" app href=?/v1e-word-pairs-set1-practice>Word Pairs Evening Practice (Set1)</a></li>
+						<li><a class="small" app href=?/v1e-word-pairs-set1-trial1>Word Pairs Evening (Set1) Trial 1</a></li>
+						<li><a class="small" app href=?/v1e-word-pairs-set1-trial2>Word Pairs Evening (Set1) Trial 2</a></li>
+						<li><a class="small" app href=?/v1e-word-pairs-set1-trial3>Word Pairs Evening (Set1) Trial 3</a></li>
+						<li><a class="small" app href=?/v1e-word-pairs-set2-practice>Word Pairs Evening Practice (Set2)</a></li>
+						<li><a class="small" app href=?/v1e-word-pairs-set2-trial1>Word Pairs Evening (Set2) Trial 1</a></li>
+						<li><a class="small" app href=?/v1e-word-pairs-set2-trial2>Word Pairs Evening (Set2) Trial 2</a></li>
+						<li><a class="small" app href=?/v1e-word-pairs-set2-trial3>Word Pairs Evening (Set2) Trial 3</a></li>
+						<p class="small font-italic text-muted mt-1"></p>
+					</ul>
+					<span>Morning</span>
+					<ul>
+						<li><a class="small" app href=?/v1m-word-pairs-recall-set1>WordPair Morning (Set1)</a></li>
+						<li><a class="small" app href=?/v1m-word-pairs-recall-set2>WordPair Morning (Set2)</a></li>
+					</ul>
+				</ul>
+			</div>			
         </section>
     </div>
     <script>
@@ -67,7 +89,7 @@
                     href=href.replace('?\/','');
                     href=href.replace(/\//g,'_');
                     if(app==undefined) $vm.load_module(href,'',{ID:$('#id__ID').val(),file:$('#output_file_name__ID').val()});
-                    else if($vm.module_list[href]!=undefined) window.open($vm.module_list[href].url);
+                    else if($vm.module_list[href]!=undefined) window.open($vm.module_list[href].url,'_blank');
                     else alert("The '"+ href +"' is not defined in the module list");
                 }
             })
